@@ -291,24 +291,6 @@ required_models = [
         },
     ),
     ModelResource(
-        "IP-Adapter (SD1.5)",
-        ResourceId(ResourceKind.ip_adapter, SDVersion.sd15, ControlMode.reference),
-        {
-            Path(
-                "models/ipadapter/ip-adapter_sd15.safetensors"
-            ): "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
-        },
-    ),
-    ModelResource(
-        "IP-Adapter (SDXL)",
-        ResourceId(ResourceKind.ip_adapter, SDVersion.sdxl, ControlMode.reference),
-        {
-            Path(
-                "models/ipadapter/ip-adapter_sdxl_vit-h.safetensors"
-            ): "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors",
-        },
-    ),
-    ModelResource(
         "LCM-LoRA (SD1.5)",
         ResourceId(ResourceKind.lora, SDVersion.sd15, "lcm"),
         {
@@ -508,19 +490,6 @@ optional_models = [
                 "models/controlnet/control_sd15_inpaint_depth_hand_fp16.safetensors"
             ): "https://huggingface.co/hr16/ControlNet-HandRefiner-pruned/resolve/main/control_sd15_inpaint_depth_hand_fp16.safetensors",
         },
-    ),
-    ModelResource(
-        "IP-Adapter Face (SD1.5)",
-        ResourceId(ResourceKind.ip_adapter, SDVersion.sd15, ControlMode.face),
-        {
-            Path(
-                "models/ipadapter/ip-adapter-faceid-plusv2_sd15.bin"
-            ): "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin",
-            Path(
-                "models/loras/ip-adapter-faceid-plusv2_sd15_lora.safetensors"
-            ): "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors",
-        },
-        requirements=ModelRequirements.insightface,
     ),
     ModelResource(
         "ControlNet Line Art (XL)",
