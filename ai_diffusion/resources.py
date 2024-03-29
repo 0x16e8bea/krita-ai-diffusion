@@ -29,13 +29,6 @@ required_custom_nodes = [
         ["InpaintPreprocessor"],
     ),
     CustomNode(
-        "IP-Adapter",
-        "ComfyUI_IPAdapter_plus",
-        "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
-        "bf627aafd0dfcc59b945cc84d1f088d457780c4a",
-        ["IPAdapterModelLoader", "IPAdapter"],
-    ),
-    CustomNode(
         "Ultimate SD Upscale",
         "ComfyUI_UltimateSDUpscale",
         "https://github.com/Acly/krita-ai-diffusion/releases/download/v0.1.0/ComfyUI_UltimateSDUpscale-6ea48202a76ccf5904ddfa85f826efa80dd50520-repack.zip",
